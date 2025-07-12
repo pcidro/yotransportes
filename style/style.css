@@ -1,0 +1,225 @@
+/* Reset CSS Básico */
+
+body {
+  line-height: 1.6;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  margin-bottom: 0;
+  gap: 100px;
+}
+
+/* Logo */
+.logo img {
+  width: 140px;
+  height: auto;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+/* Menu */
+.header-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: #0a0a0a;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  padding: 15px;
+}
+
+.header-menu a:hover {
+  color: #0051ff;
+}
+
+/* Botão WhatsApp */
+.whatsapp {
+  background-color: #25d366;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+/* Header */
+
+.hero {
+  padding: 0 1rem;
+  background-color: #18317e;
+  color: white;
+  min-height: 75vh;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  margin: 0 auto;
+  padding-top: 140px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.destaque {
+  display: block;
+  color: #c2d9ff;
+}
+
+.subtexto {
+  font-size: 1.25rem;
+  color: #a0c4ff;
+  margin-bottom: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-whatsapp {
+  background-color: #22c55e;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transform: scale(1);
+}
+
+.btn-whatsapp:hover {
+  background-color: #16a34a;
+  transform: scale(1.05);
+}
+
+.hero-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.truck-img {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transform: rotate(-2deg);
+  transition: transform 0.5s ease;
+}
+
+.truck-img:hover {
+  transform: rotate(0deg);
+}
+
+/* Sobre */
+
+.sobre {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: #f9fafb;
+}
+
+.sobre p {
+  color: #4b5563;
+}
+
+.sobre h1 {
+  color: #1e3a8a;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Beneficios */
+
+.beneficios-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.beneficios-container p {
+  font-size: 12px;
+  color: #4b5563;
+  max-width: 240px;
+}
+
+.beneficios-container li {
+  margin-right: 80px;
+}
+
+.beneficios-container h2 {
+  color: #1e3a91;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.icone-sobre {
+  margin: 0;
+  background: #dbeafe;
+  border-radius: 30px;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  width: 48px;
+  height: 48px;
+  color: #2563eb;
+}
