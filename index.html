@@ -73,6 +73,7 @@
 
 
 
+
   <section class="sobre" id="sobre">
     <div class="container">
       <h1 class="titulo-principal">Sobre a Yo Transportes</h1>
@@ -173,6 +174,39 @@
 
     </div>
   </section>
+
+  <section class="calculadora">
+    <div class="container">
+      <div class="calculadora-inicio">
+        <img class="calculadora-truck" src="img/truck.svg" alt="">
+        <h2>Calculadora de Frete</h2>
+        <p>Calcule o valor do frete para sua entrega de forma rápida e fácil</p>
+      </div>
+
+      <form id="form" class="formulario-container">
+        <div class="calculadora-titulo">
+          <img src="img/calculadora.svg" alt="">
+          <h3>Calcular Frete</h3>
+        </div>
+
+        <div class="input-group"> <img src="img/adress.svg" alt="Ícone de endereço de coleta" class="icon-address"> <label for="origem">Endereço de coleta:</label>
+          <input type="text" id="origem" placeholder="Digite o endereço completo da coleta..." required>
+        </div>
+
+        <div class="input-group"> <img src="img/adress.svg" class="icon-address">
+          <label for="destino">Endereço de entrega:</label>
+          <input type="text" id="destino" placeholder="Digite o endereço completo da entrega..." required>
+        </div>
+
+        <button type="submit" class="calculate-button">
+          <img src="img/calculadora.svg" alt="">
+          Calcular Valor do Frete
+        </button>
+
+      </form>
+      <p id="resultado"></p>
+  </section>
+
 
 
 

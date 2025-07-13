@@ -818,3 +818,152 @@ img {
 .footer a:hover::after {
   width: 100%;
 }
+
+/* Calculadora INICIO */
+
+.calculadora {
+  background: #f9fafb;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.calculadora-truck {
+  margin: 30px auto 0;
+  width: 60px;
+  background-color: #3c83f6;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.calculadora-inicio {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.calculadora-inicio h2 {
+  color: #282c34;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.calculadora-inicio p {
+  color: #4b5563;
+}
+
+.formulario-container {
+  background: #fff;
+}
+
+/* Form */
+
+.calculadora-titulo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+.formulario-container {
+  padding: 20px 30px;
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.formulario-container label {
+  display: block;
+  color: #282c34;
+}
+
+.formulario-container input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 5px;
+  background: #f3f4f6;
+  border: none;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+input[type="text"]:focus {
+  border-color: #3c83f6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.calculate-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  width: 100%;
+  background: #3c83f6;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.calculate-button img {
+  width: 20px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* Calculadora mobile */
+
+@media (max-width: 700px) {
+  .calculadora {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .calculadora-inicio h2 {
+    font-size: 1.75rem;
+  }
+
+  .formulario-container {
+    width: 90%;
+    padding: 15px 20px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .formulario-container label {
+    width: 100%;
+  }
+
+  .calculate-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculadora-inicio h2 {
+    font-size: 1.5rem;
+  }
+
+  .formulario-container {
+    padding: 10px 15px;
+  }
+
+  .formulario-container input[type="text"] {
+    padding: 10px;
+  }
+}
