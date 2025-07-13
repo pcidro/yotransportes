@@ -967,3 +967,40 @@ input[type="text"]:focus {
     padding: 10px;
   }
 }
+
+.resultado-box {
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #dce1e7;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.resultado-box h4 {
+  color: #1e293b;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.valor-frete {
+  color: #2563eb;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.info-extra {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+
+.info-alteracao {
+  color: red;
+  font-size: 0.95rem;
+  margin-top: 8px;
+}

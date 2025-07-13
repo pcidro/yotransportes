@@ -189,7 +189,7 @@
           <h3>Calcular Frete</h3>
         </div>
 
-        <div class="input-group"> <img src="img/adress.svg" alt="Ícone de endereço de coleta" class="icon-address"> <label for="origem">Endereço de coleta:</label>
+        <div class="input-group"> <img src="img/adress.svg" class="icon-address"> <label for="origem">Endereço de coleta:</label>
           <input type="text" id="origem" placeholder="Digite o endereço completo da coleta..." required>
         </div>
 
@@ -203,8 +203,19 @@
           Calcular Valor do Frete
         </button>
 
+        <div id="box-resultado" class="resultado-box" style="display: none">
+
+          <h4>Valor do Frete</h4>
+
+          <p class="valor-frete" id="preco-frete">R$ 00,00</p>
+
+          <p class="info-extra" id="distancia-frete">Distância: 0 km</p>
+
+          <p class="info-alteracao" id="alteracao-distancia">
+          </p>
+
+        </div>
       </form>
-      <p id="resultado"></p>
   </section>
 
 
@@ -368,7 +379,7 @@
     </div>
   </footer>
 
-
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoAC4Nithm7-RTdMpFixe8EYuqh4vJA38&libraries=places"></script>
   <script src="script.js"></script>
 </body>
 
