@@ -14,23 +14,28 @@
 
 
 <body>
-  <header class="header container">
+  <header class="header container" id="inicio">
     <div class="logo">
       <img src="img/logo-removebg.png" alt="Logo Yo Transportes">
     </div>
 
+    <!-- Botão do menu hamburger -->
+    <button class="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <!-- Menu de navegação -->
     <nav>
       <ul class="header-menu">
         <li><a href="#inicio">Início</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#contato">Contato</a></li>
-        <li><a href="#" class="whatsapp">WhatsApp</a>
-        </li>
       </ul>
     </nav>
-    </div>
-
   </header>
+
 
   <section class="hero">
     <div class="container">
@@ -65,7 +70,9 @@
 
   </section>
 
-  <section class="sobre">
+
+
+  <section class="sobre" id="sobre">
     <div class="container">
       <h1 class="titulo-principal">Sobre a Yo Transportes</h1>
       <p>Somos uma empresa especializada em transporte de cargas, mudanças e fretes, com foco em rapidez, segurança e qualidade no atendimento. Nossa missão é conectar pessoas e empresas através de um serviço de transporte confiável e eficiente.</p>
@@ -101,7 +108,9 @@
 
   </section>
 
-  <section class="servicos container">
+
+
+  <section class="servicos container" id="servicos">
     <h1 class="titulo-principal">Nossos Serviços</h1>
     <p>Oferecemos uma gama completa de serviços de transporte para atender todas as suas necessidades </p>
 
@@ -156,13 +165,16 @@
       </li>
     </ul>
 
-    <a class="btn-whatsapp" href="#">
+    <a class="btn-whatsapp" href="https://wa.me/5511999999999">
       <img src="img/phone.svg" alt="Ícone de telefone">
       Solicitar Orçamento no WhatsApp
     </a>
 
     </div>
   </section>
+
+
+
 
   <section class="testimonials-section">
     <div class="container">
@@ -213,7 +225,7 @@
 
 
 
-  <section class="contato">
+  <section class="contato" id="contato">
     <div class="container">
       <h1 class="titulo-principal">Entre em Contato</h1>
       <p>Solicite seu orçamento sem compromisso. Estamos prontos para atender você!</p>
@@ -267,6 +279,18 @@
 
 
         </div>
+        <div class="beneficios-yo">
+          <h2 class="beneficios-titulo">Por que escolher a YO Transportes?</h2>
+          <ul class="lista-beneficios">
+
+            <li>Atendimento personalizado 24 horas</li>
+            <li>Frota moderna e bem conservada</li>
+            <li>Preços competitivos e transparentes</li>
+            <li>Cobertura em toda a região metropolitana</li>
+            <li>Profissionais experientes e confiáveis</li>
+          </ul>
+        </div>
+
 
       </div>
     </div>
@@ -310,7 +334,7 @@
   </footer>
 
 
-
+  <script src="script.js"></script>
 </body>
 
 
