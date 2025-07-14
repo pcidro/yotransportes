@@ -1235,3 +1235,88 @@ input[type="text"]:focus {
 .botao-primario:hover {
   background-color: #1d4ed8;
 }
+
+/* Servicos PAGE */
+
+.servicos {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.titulo-principal {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.descricao-servicos {
+  color: #4b5563;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.grid-servicos {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card-servico {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px #e5e7eb;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card-servico:hover {
+  transform: translateY(-5px);
+}
+
+.icone-servico {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem;
+  background: #2563eb;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icone-servico img {
+  width: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.card-servico h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+}
+
+.card-servico p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.botao-primario {
+  background: #2563eb;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.servicos > h1 {
+  margin-bottom: 20px;
+}
+
+.servicos > p {
+  margin-bottom: 20px;
+}
