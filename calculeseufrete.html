@@ -31,7 +31,7 @@
       <ul class="header-menu">
         <li><a href="index.html">Início</a></li>
         <li><a href="fretesrapidos.html">Serviços</a></li>
-        <li><a href="calculeseufrete.html">Calcule Seu Frete</a></li>
+        <li><a href="#">Calcule Seu Frete</a></li>
         <li><a href="index.html">Contato</a></li>
       </ul>
     </nav>
@@ -40,35 +40,63 @@
   <!-- Botão de Voltar -->
   <a href="index.html" class="voltar">← Voltar</a>
 
-  <main class="container-precos">
-    <div class="icone-carro-preco">
-      <img src="img/car.svg" alt="">
-    </div>
+  <section class="calculadora" id="calculadoraID">
+    <div class="container">
+      <div class="calculadora-inicio">
+        <img class="calculadora-truck" src="img/truck.svg" alt="">
+        <h2>Calculadora de Frete</h2>
+        <p>Calcule o valor do frete para sua entrega de forma rápida e fácil</p>
+      </div>
 
-    <h1>Como calculamos o valor da corrida?</h1>
+      <form id="form" class="formulario-container">
+        <div class="calculadora-titulo">
+          <img src="img/calculadora.svg" alt="">
+          <h3>Calcular Frete</h3>
+        </div>
 
-    <div class="tabela">
-      <h2>Tabela de Preços</h2>
+        <div class="input-group"> <img src="img/adress.svg" class="icon-address"> <label for="origem">Endereço de coleta:</label>
+          <input type="text" id="origem" placeholder="Digite o endereço completo da coleta..." required>
+        </div>
 
-      <ul>
-        <li><span>Até 2km</span> <strong>R$ 40,00</strong></li>
-        <li><span>Até 5km</span> <strong>R$ 50,00 - R$ 60,00</strong></li>
-        <li><span>Até 10km</span> <strong>R$ 100,00</strong></li>
-        <li><span>Até 20km</span> <strong>R$ 150,00</strong></li>
-        <li><span>Até 40km</span> <strong>R$ 200,00</strong></li>
-        <li><span>Acima de 40km</span> <strong>R$ 2,30 por km rodado</strong></li>
-        <li><span>Acima de 80km</span> <strong>R$ 1,60 por km rodado</strong></li>
-      </ul>
-    </div>
+        <div class="input-group"> <img src="img/adress.svg" class="icon-address">
+          <label for="destino">Endereço de entrega:</label>
+          <input type="text" id="destino" placeholder="Digite o endereço completo da entrega..." required>
+        </div>
 
-    <div class="observacoes">
-      <h3>Observações importantes</h3>
-      <p>• Valores devem ser considerados para o período de segunda a sexta das 06:00h às 19:00h. Sábado, domingo, feriados e fora desses horários será cobrado acréscimo a combinar.</p>
-      <p>• Para cálculo de valores e quilometragem deve ser considerado o deslocamento até o local de partida.</p>
-      <p>• Os valores "por km rodado" consideram quilometragem de ida e volta.</p>
-    </div>
+        <button type="submit" class="calculate-button">
+          <img src="img/calculadora.svg" alt="">
+          Calcular Valor do Frete
+        </button>
 
-  </main>
+        <a class="como-calculamos-frete" href="comocalculamos.html">Como calculamos o valor do frete?</a>
+
+        <div id="box-resultado" class="resultado-box" style="display: none">
+
+          <h4>Valor do Frete</h4>
+
+          <p class="valor-frete" id="preco-frete">R$ 00,00</p>
+
+          <p class="info-extra" id="distancia-frete">Distância: 0 km</p>
+
+          <p class="info-alteracao" id="alteracao-distancia">
+          </p>
+
+        </div>
+      </form>
+
+      <section class="frete-cta">
+        <h2>Deseja receber um orçamento personalizado?</h2>
+        <p>Entre em contato conosco</p>
+        <a href="https://wa.me/5511981223332" target="_blank" class="botao-primario">Fazer Orçamento</a>
+      </section>
+  </section>
+
+
+
+
+
+
+
 
   <footer class="footer">
     <div class="container">
