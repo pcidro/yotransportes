@@ -56,9 +56,6 @@
             <img src="img/phone.svg" alt="">
             Solicitar Orçamento no WhatsApp
           </a>
-          <a href="#calculadoraID" class="btn-frete-hero">
-            Calcule o seu frete
-          </a>
         </div>
       </div>
 
@@ -283,63 +280,69 @@
 
 
 
-  <section class="contato" id="contato">
+  <section class="contato-section" id="contato">
     <div class="container">
-      <h1 class="titulo-principal">Entre em Contato</h1>
-      <p>Solicite seu orçamento sem compromisso. Estamos prontos para atender você!</p>
+      <div class="titulo-contato">
+        <h2>Entre em Contato</h2>
+        <p>Solicite seu orçamento ou tire suas dúvidas. Estamos prontos para atender você!</p>
+      </div>
 
-      <div class="contact-area">
-        <ul class="contatos-container">
-          <li class="contato-item">
-            <div class="contato-item-flex">
-              <div class="icon-box">
-                <img src="img/phone.svg" alt="Ícone WhatsApp">
+      <div class="conteudo-contato">
+        <div class="info-contato">
+          <div class="card-contato">
+            <div class="card-header-contato">
+              <div class="icon-contato">
+                <img src="img/phone.svg" alt="Telefone" class="">
               </div>
               <div>
-                <h3>WhatsApp</h3>
-                <a href="https://wa.me/5511981223332" target="_blank" rel="noopener noreferrer">
-                  <p>(11)98122-3332</p>
-                </a>
+                <h3>Telefone</h3>
+                <p>(11) 99999-9999</p>
+                <small>WhatsApp disponível 24h</small>
               </div>
             </div>
-          </li>
 
-          <li class="contato-item">
-            <div class="contato-item-flex">
-              <div class="icon-box">
-                <img src="img/email.svg" alt="Ícone Email">
-              </div>
-              <div>
-                <h3>E-mail</h3>
-                <a href="mailto:contato@yotransportes.com.br">
-                  <p>contato@yotransportes.com.br</p>
-                </a>
-              </div>
-            </div>
-          </li>
-
-          <li class="contato-item">
-            <div class="contato-item-flex">
-              <div class="icon-box">
-                <img src="img/instagram.svg" alt="Ícone Instagram">
+            <div class="card-header-contato">
+              <div class="icon-contato">
+                <img src="img/instagram.svg" alt="Telefone" class="">
               </div>
               <div>
                 <h3>Instagram</h3>
-                <a href="https://instagram.com/yo_transportes" target="_blank" rel="noopener noreferrer">
-                  <p>@yo_transportes</p>
-                </a>
-
+                <p>@yo_transportes</p>
+                <small>Acompanhe nossas entregas</small>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
 
+        <div class="formulario-contato">
+          <h3>Solicite seu Orçamento</h3>
+          <p>Preencha o formulário e envie sua solicitação via WhatsApp</p>
 
+          <form>
+            <label for="nome">Nome Completo *</label>
+            <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+
+            <label for="servico-contato-item">Serviço Desejado *</label>
+            <select id="servico-contato-item" required>
+              <option value="">Selecione o serviço desejado</option>
+              <option value="frete">Frete</option>
+              <option value="carreto">Carreto</option>
+              <option value="resgate">Resgate de Motos</option>
+              <option value="entulho">Retirada de Entulhos</option>
+            </select>
+
+            <label for="mensagem">Mensagem / Detalhes do Pedido *</label>
+            <textarea id="mensagem" rows="5" placeholder="Descreva a sua necessidade" required></textarea>
+
+            <button type="submit">
+              <img src="img/phone.svg" alt="WhatsApp" class="icon-btn">
+              Enviar via WhatsApp
+            </button>
+
+            <p class="aviso">* Campos obrigatórios. Sua mensagem será enviada diretamente para nosso WhatsApp.</p>
+          </form>
+        </div>
       </div>
-
-
-
-    </div>
     </div>
   </section>
 

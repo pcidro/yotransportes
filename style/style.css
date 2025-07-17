@@ -633,98 +633,177 @@ img {
 
 /* Contato */
 
-.contato p {
+.contato-section {
+  background: #fff;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.titulo-contato {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.contact-area {
-  color: #ffffff;
-  border-radius: 16px;
-  max-width: 500px;
+.titulo-contato h2 {
+  font-size: 2.5rem;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.titulo-contato p {
+  color: #6b7280;
+  font-size: 1.1rem;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-.contact-area h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: center;
+.conteudo-contato {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
 }
 
-.contatos-container {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.info-contato {
+  flex: 1;
+  min-width: 300px;
 }
 
-.contato-item {
-  display: flex;
-  flex-direction: column;
+.contato-inicio {
+  margin-bottom: 15px;
+  background: #3b82f6;
+  color: #fff;
+  width: 100%;
 }
 
-.contato-item-flex {
+.card-contato {
+  background: #f9fafb;
+  padding: 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-header-contato {
   display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
   align-items: flex-start;
-  gap: 1rem;
 }
 
-.icon-box {
-  background-color: #3b82f6;
-  padding: 0.75rem;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.card-header-contato h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  color: #111827;
 }
 
-.icon-box img {
-  width: 24px;
-  height: 24px;
-}
-
-.contato-item h3 {
+.card-header-contato p {
   margin: 0;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #1e3aa8;
-}
-
-.contato-item p {
-  margin: 0.2rem 0;
+  color: #4b5563;
   font-size: 0.95rem;
-  color: #4b587c;
 }
 
-.contato-info-extra {
+.card-header-contato small {
+  color: #9ca3af;
   font-size: 0.85rem;
-  color: #cbd5e1;
 }
 
-.contato img {
-  width: 20px;
-  height: 20px;
+.icon-contato {
+  width: 36px;
+  height: 36px;
+  background: #3c83f6;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.icon-contato img {
   filter: brightness(0) invert(1);
 }
 
-.contato-item a p {
-  color: #2563eb;
-  text-decoration: underline;
+.formulario-contato {
+  flex: 1;
+  min-width: 300px;
+  background: #f9fafb;
+  padding: 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.formulario-contato h3 {
+  font-size: 1.4rem;
+  color: #111827;
+  margin-bottom: 5px;
+}
+
+.formulario-contato p {
+  color: #6b7280;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.formulario-contato form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.formulario-contato input,
+.formulario-contato select,
+.formulario-contato textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #ffffff;
+}
+
+.formulario-contato textarea {
+  resize: none;
+  height: 120px;
+}
+
+.formulario-contato button {
+  background: #3b82f6;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: background 0.3s ease;
 }
 
-.contato-item a p:hover {
-  color: #1d4ed8;
+.formulario-contato button:hover {
+  background: #2563eb;
 }
 
-/* Contato mobile */
+.icon-btn {
+  width: 20px;
+  height: 20px;
+}
 
-@media (max-width: 700px) {
-  .contact-area {
-  }
+.aviso {
+  font-size: 0.85rem;
+  text-align: center;
+  color: #6b7280;
+  margin-top: 15px;
 }
 
 /* Footer */
@@ -1007,7 +1086,7 @@ input[type="text"]:focus {
 }
 
 .info-alteracao {
-  color: red;
+  color: #6b7280;
   font-size: 0.95rem;
   margin-top: 8px;
 }

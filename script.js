@@ -103,7 +103,7 @@ form.addEventListener("submit", function (e) {
           precoSpan.innerText = `R$ ${preco.toFixed(2)}`;
           distanciaSpan.innerText = `Distância: ${distanciaText}`;
           alteracaoDistancia.innerText =
-            "Valores aproximados e sujeitos a alteração";
+            "O valor é uma estimativa e pode variar. Fale conosco para confirmar o frete.";
         } else {
           boxResultado.style.display = "block";
           precoSpan.innerText = "Erro";
