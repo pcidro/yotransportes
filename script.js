@@ -22,10 +22,18 @@ links.forEach((link) => {
 
 const menuToggle = document.querySelector(".menu-toggle");
 const headerMenu = document.querySelector(".header-menu");
+const menuLinks = document.querySelectorAll(".header-menu a");
 
 menuToggle.addEventListener("click", () => {
   headerMenu.classList.toggle("active");
   menuToggle.classList.toggle("active");
+});
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    headerMenu.classList.remove("active");
+    menuToggle.classList.remove("active");
+  });
 });
 
 // Espera o DOM carregar antes de ativar o autocomplete pra calculadora
@@ -113,3 +121,36 @@ form.addEventListener("submit", function (e) {
     }
   );
 });
+
+// Formulário
+
+const formulario = document.getElementById("form-contato");
+
+formulario.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const nome = document.getElementById("nome").value.trim();
+  const servico = document.getElementById("servico-contato-item").value;
+  const mensagem = document.getElementById("mensagem").value.trim();
+
+  if (!nome || !servico || !mensagem) {
+    alert("Por favor, preencha todos os campos obrigatórios.");
+    return;
+  }
+
+  if (mensagem.length <= 2) {
+    alert("Por favor, preencha a mensagem com detalhes do pedido");
+    return;
+  }
+
+  const numeroWhatsApp = "5511981223332";
+
+  const texto = `Meu nome é *${nome}* e estou entrando em contato através do site.\n\nTenho interesse no serviço de *${servico}* e gostaria de solicitar um orçamento.\n\n📝 *Detalhes do pedido:*\n${mensagem}\n\nAguardo retorno. Obrigado!`;
+
+  const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(
+    texto
+  )}`;
+  window.open(url, "_blank");
+  formulario.reset();
+});
+
+// Animação ao Scroll

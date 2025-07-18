@@ -40,61 +40,74 @@
   <!-- Botão de Voltar -->
   <a href="index.html" class="voltar">← Voltar</a>
 
-  <main class="container-frete">
-    <section class="frete-hero">
-      <div class="frete-icon">
-        <img src="img/home.svg">
-      </div>
-      <h1>Carretos Residenciais</h1>
-      <p>Mudanças e transportes domésticos realizados com todo o cuidado que sua casa merece. Equipe especializada em manuseio de móveis e objetos pessoais.</p>
-    </section>
-
-    <section class="frete-beneficios">
-      <div class="card-beneficio">
-        <h3>Transporte Cuidadoso</h3>
-        <p>Movimentamos seus móveis e itens pessoais com máxima proteção e responsabilidade.</p>
+  <section class="contato-section" id="contato">
+    <div class="container">
+      <div class="titulo-contato">
+        <h2>Entre em Contato</h2>
+        <p>Solicite seu orçamento ou tire suas dúvidas. Estamos prontos para atender você!</p>
       </div>
 
-      <div class="card-beneficio">
-        <h3>Equipe Especializada</h3>
-        <p>Profissionais experientes preparados para lidar com mudanças em casas e apartamentos.</p>
-      </div>
+      <div class="conteudo-contato">
+        <div class="info-contato">
+          <div class="card-contato">
+            <div class="card-header-contato">
+              <div class="icon-contato">
+                <img src="img/phone.svg" alt="Telefone" class="">
+              </div>
+              <div>
+                <h3>Telefone</h3>
+                <p><a href="https://wa.me/5511981223332" target="_blank">(11) 98122-3332</a></p>
+                <small>WhatsApp disponível para contato</small>
+              </div>
+            </div>
 
-      <div class="card-beneficio">
-        <h3>Atendimento Local</h3>
-        <p>Atendemos toda a Grande São Paulo, Interior e Baixada com rotas otimizadas para o seu trajeto.</p>
-      </div>
-    </section>
-
-    <section class="frete-detalhes">
-      <h2>Por que escolher nosso serviço de Carretos Residenciais?</h2>
-      <div class="detalhes-grid">
-        <div>
-          <h3>Diferenciais:</h3>
-          <ul>
-            <li>Serviço rápido e seguro</li>
-            <li>Veículos preparados para mudança</li>
-            <li>Agendamento flexível</li>
-          </ul>
+            <div class="card-header-contato">
+              <div class="icon-contato">
+                <img src="img/instagram.svg" alt="Telefone" class="">
+              </div>
+              <div>
+                <h3>Instagram</h3>
+                <p><a href="https://instagram.com/yo_transportes" target="_blank">@yo_transportes</a></p>
+                <small>Acompanhe nossas entregas</small>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <h3>Ideal para:</h3>
-          <ul>
-            <li>Pequenas mudanças</li>
-            <li>Transporte de móveis</li>
-            <li>Itens frágeis ou pessoais</li>
-            <li>Primeira mudança de residência</li>
-          </ul>
+
+        <div class="formulario-contato">
+
+          <h3>Solicite seu Orçamento</h3>
+          <p>Preencha o formulário e envie sua solicitação via WhatsApp</p>
+
+          <form id="form-contato">
+            <label for="nome">Nome Completo *</label>
+            <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+
+            <label for="servico-contato-item">Serviço Desejado *</label>
+            <select id="servico-contato-item" required>
+              <option value="" disabled selected>Selecione o serviço desejado</option>
+              <option value="frete">Frete</option>
+              <option value="carreto">Carreto</option>
+              <option value="resgate">Resgate de Motos</option>
+              <option value="entulho">Retirada de Entulhos</option>
+            </select>
+
+            <label for="mensagem">Mensagem / Detalhes do Pedido *</label>
+            <textarea id="mensagem" rows="5" placeholder="Descreva a sua necessidade" required></textarea>
+
+            <button type="submit">
+              <div class="btn-form">
+                <img src="img/phone.svg">
+                Enviar via WhatsApp
+              </div>
+            </button>
+
+            <p class="aviso">* Campos obrigatórios. Sua mensagem será enviada diretamente para nosso WhatsApp.</p>
+          </form>
         </div>
       </div>
-    </section>
-
-    <section class="frete-cta">
-      <h2>Planejando uma mudança?</h2>
-      <p>Solicite um orçamento gratuito para avaliarmos sua mudança.</p>
-      <a href="https://wa.me/5511981223332" target="_blank" class="botao-primario">Solicite seu Orçamento</a>
-    </section>
-  </main>
+    </div>
+  </section>
 
 
 
