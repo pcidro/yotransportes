@@ -36,6 +36,22 @@ menuLinks.forEach((link) => {
   });
 });
 
+// Vendo se o usuario desceu até a HERO sem apertar nada no menu
+
+window.addEventListener("scroll", () => {
+  const heroSection = document.querySelector(".hero");
+  const heroTop = heroSection.getBoundingClientRect().top;
+
+  // Verifica se a hero apareceu e se o menu está aberto
+  if (
+    heroTop < window.innerHeight * 0.7 &&
+    headerMenu.classList.contains("active")
+  ) {
+    headerMenu.classList.remove("active");
+    menuToggle.classList.remove("active");
+  }
+});
+
 // Espera o DOM carregar antes de ativar o autocomplete pra calculadora
 window.addEventListener("load", () => {
   const origemInput = document.getElementById("origem");
