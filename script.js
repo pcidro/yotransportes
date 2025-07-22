@@ -36,17 +36,14 @@ menuLinks.forEach((link) => {
   });
 });
 
-// Vendo se o usuario desceu até a HERO sem apertar nada no menu
+// Fechar menu hamburger automaticamente caso pessoa desceu 8% da pag e não fechou o menu
 
 window.addEventListener("scroll", () => {
-  const heroSection = document.querySelector(".hero");
-  const heroTop = heroSection.getBoundingClientRect().top;
+  const scrollPosition = window.scrollY;
+  const totalHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercentage = (scrollPosition / totalHeight) * 100;
 
-  // Verifica se a hero apareceu e se o menu está aberto
-  if (
-    heroTop < window.innerHeight * 0.7 &&
-    headerMenu.classList.contains("active")
-  ) {
+  if (scrollPercentage >= 5 && headerMenu.classList.contains("active")) {
     headerMenu.classList.remove("active");
     menuToggle.classList.remove("active");
   }
