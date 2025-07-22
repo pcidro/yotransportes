@@ -194,8 +194,8 @@ img {
     gap: 1rem;
     background-color: white;
     position: fixed;
-    top: 100px;
-    right: 3rem;
+    top: 140px;
+    right: -5rem;
     border-radius: 6px;
     padding: 1rem;
     z-index: 100;
