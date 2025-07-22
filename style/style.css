@@ -843,6 +843,11 @@ img {
   padding: 30px 60px;
 }
 
+.servicos-area-footer li a {
+  color: #dbeafe;
+  font-size: 16px;
+}
+
 .footer h3 {
   color: #ffffff;
   margin-bottom: 20px;
