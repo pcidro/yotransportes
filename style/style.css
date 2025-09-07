@@ -395,8 +395,37 @@ img {
   }
 }
 
-/* Sobre */
+/* Celulares grandes e tablets */
+@media (max-width: 1024px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-top: 120px;
+    gap: 2rem;
+  }
 
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtexto,
+  .descricao {
+    font-size: 1.05rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .truck-img {
+    width: 60%;
+    max-width: 350px;
+  }
+
+  .btn-whatsapp {
+    margin-top: 60px;
+  }
+}
+
+/* Seção Sobre */
 .sobre {
   padding-bottom: 60px;
   padding-top: 60px;
@@ -406,20 +435,24 @@ img {
 .sobre > p {
   color: #4b5563;
   text-align: center;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.5;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
 }
 
 .sobre h1 {
   color: #1e3a8a;
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   text-align: center;
   margin-bottom: 30px;
+  font-weight: 800;
 }
 
-/* Beneficios */
-
+/* Benefícios */
 .beneficios-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
   padding: 2rem;
   align-items: center;
@@ -427,26 +460,26 @@ img {
   text-align: center;
 }
 
-.beneficios-container p {
-  font-size: 12px;
-  color: #4b5563;
-  max-width: 240px;
-}
-
 .beneficios-container li {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 240px;
+  max-width: 260px;
 }
 
 .beneficios-container h2 {
   color: #1e3a8a;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 8px;
+}
+
+.beneficios-container p {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  color: #4b5563;
+  line-height: 1.4;
 }
 
 .icone-sobre {
@@ -460,8 +493,19 @@ img {
   justify-content: center;
 }
 
-/* Servicos */
+/* Sobre resposivo pra celulares grandes */
+@media (max-width: 1024px) {
+  .beneficios-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
 
+@media (max-width: 600px) {
+  .beneficios-container {
+    grid-template-columns: 1fr;
+  }
+}
 .servicos {
   padding: 60px 20px;
 }
@@ -470,9 +514,20 @@ img {
   color: #4b5563;
   text-align: center;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.6;
+  max-width: 900px;
 }
 
+.servicos h1 {
+  color: #1e3a8a;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+/* Lista de cards */
 .lista-servicos {
   display: flex;
   flex-wrap: wrap;
@@ -501,34 +556,18 @@ img {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
-.btn-saiba-mais {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #2563eb;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  align-self: center;
-}
-
-.btn-saiba-mais:hover {
-  background-color: #1e40af;
-}
-
 .card-servico h3 {
-  font-size: 1.2rem;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
   margin-bottom: 8px;
   color: #1e3a8a;
   text-align: center;
 }
 
 .card-servico p {
-  font-size: 0.95rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   color: #4b5563;
   text-align: center;
+  line-height: 1.4;
 }
 
 .card-servico .icon {
@@ -548,6 +587,25 @@ img {
   filter: brightness(0) invert(1);
 }
 
+/* Botão Saiba Mais */
+.btn-saiba-mais {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.btn-saiba-mais:hover {
+  background-color: #1e40af;
+}
+
 .servicos .btn-whatsapp {
   margin-top: 30px;
   display: flex;
@@ -556,15 +614,23 @@ img {
   margin: 30px auto 0;
 }
 
-/* Servico mobile */
+/* Responsivo serviços */
+@media (max-width: 1024px) {
+  .lista-servicos {
+    gap: 20px;
+  }
+}
 
 @media (max-width: 768px) {
   .servicos {
     padding: 60px 10px;
   }
+  .lista-servicos {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 /* Depoimentos */
-
 .testimonials-section {
   padding: 60px 20px;
   background-color: #f9fafb;
@@ -578,7 +644,7 @@ img {
 }
 
 .testimonials-header h2 {
-  font-size: 1.8rem;
+  font-size: clamp(1.6rem, 3vw, 2rem);
   color: #1e3a8a;
   margin-bottom: 8px;
   font-weight: bold;
@@ -586,7 +652,10 @@ img {
 
 .testimonials-header p {
   color: #4b5563;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
 }
 
 .testimonials-row {
@@ -599,11 +668,12 @@ img {
 .testimonial-card {
   background-color: #ffffff;
   border-radius: 12px;
-  padding: 16px;
+  padding: 20px;
   width: 280px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  line-height: 1.5;
 }
 
 .testimonial-card:hover {
@@ -617,7 +687,7 @@ img {
 }
 
 .quote {
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
   color: #bfdbfe;
   margin-right: 6px;
   line-height: 1;
@@ -625,14 +695,14 @@ img {
 
 .stars {
   color: #facc15;
-  font-size: 0.9rem;
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
 }
 
 .comment {
   color: #374151;
   font-style: italic;
   margin-bottom: 12px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .testimonial-footer {
@@ -643,11 +713,12 @@ img {
 .name {
   color: #1e3a8a;
   font-weight: 600;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
 }
 
 .service {
   color: #2563eb;
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
 }
 
 /* Contato */
@@ -665,16 +736,17 @@ img {
 }
 
 .titulo-contato h2 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 4vw, 2.5rem);
   color: #111827;
   margin-bottom: 10px;
 }
 
 .titulo-contato p {
   color: #6b7280;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.1rem);
   max-width: 600px;
   margin: 0 auto;
+  line-height: 1.5;
 }
 
 .conteudo-contato {
@@ -713,19 +785,19 @@ img {
 
 .card-header-contato h3 {
   margin: 0 0 5px 0;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   color: #111827;
 }
 
 .card-header-contato p {
   margin: 0;
   color: #4b5563;
-  font-size: 0.95rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
 
 .card-header-contato small {
   color: #9ca3af;
-  font-size: 0.85rem;
+  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
 }
 
 .icon-contato {
@@ -751,7 +823,7 @@ img {
 }
 
 .formulario-contato h3 {
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
   color: #111827;
   margin-bottom: 5px;
 }
@@ -759,7 +831,8 @@ img {
 .formulario-contato p {
   color: #6b7280;
   margin-bottom: 25px;
-  font-size: 0.95rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  line-height: 1.5;
 }
 
 .formulario-contato form label {
@@ -767,7 +840,7 @@ img {
   margin: 15px 0 5px;
   font-weight: 600;
   color: #374151;
-  font-size: 0.95rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
 
 .formulario-contato input,
@@ -777,7 +850,7 @@ img {
   padding: 12px;
   border: 1px solid #d1d5db;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: clamp(0.95rem, 1.5vw, 1rem);
   background: #ffffff;
 }
 
@@ -793,7 +866,7 @@ img {
   padding: 12px 20px;
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.1rem);
   margin-top: 20px;
   width: 100%;
   display: flex;
@@ -825,7 +898,7 @@ img {
 }
 
 .aviso {
-  font-size: 0.85rem;
+  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
   text-align: center;
   color: #6b7280;
   margin-top: 15px;
@@ -953,12 +1026,14 @@ img {
 
 .calculadora-inicio h2 {
   color: #282c34;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   margin-bottom: 10px;
 }
 
 .calculadora-inicio p {
   color: #4b5563;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.5;
 }
 
 .formulario-container {
@@ -984,6 +1059,8 @@ img {
 .formulario-container label {
   display: block;
   color: #282c34;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-weight: 600;
 }
 
 .formulario-container input {
@@ -992,6 +1069,7 @@ img {
   margin-top: 5px;
   background: #f3f4f6;
   border: none;
+  font-size: clamp(0.95rem, 1.5vw, 1rem);
 }
 
 .input-group {
@@ -1021,7 +1099,7 @@ input[type="text"]:focus {
   border-radius: 20px;
   margin-top: 30px;
   font-weight: 700;
-  font-size: 15px;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   cursor: pointer;
 }
 
@@ -1038,6 +1116,7 @@ input[type="text"]:focus {
   text-align: center;
   cursor: pointer;
   display: block;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
 
 /* Calculadora mobile */
@@ -1046,10 +1125,6 @@ input[type="text"]:focus {
   .calculadora {
     padding-top: 40px;
     padding-bottom: 60px;
-  }
-
-  .calculadora-inicio h2 {
-    font-size: 1.75rem;
   }
 
   .formulario-container {
@@ -1070,16 +1145,11 @@ input[type="text"]:focus {
 
   .calculate-button {
     padding: 0.8rem 1.5rem;
-    font-size: 14px;
     margin-top: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .calculadora-inicio h2 {
-    font-size: 1.5rem;
-  }
-
   .formulario-container {
     padding: 10px 15px;
   }
@@ -1103,26 +1173,26 @@ input[type="text"]:focus {
 
 .resultado-box h4 {
   color: #1e293b;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   margin-bottom: 10px;
 }
 
 .valor-frete {
   color: #2563eb;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: bold;
   margin: 0;
 }
 
 .info-extra {
   color: #64748b;
-  font-size: 0.95rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   margin-top: 8px;
 }
 
 .info-alteracao {
   color: #6b7280;
-  font-size: 0.95rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   margin-top: 8px;
 }
 
