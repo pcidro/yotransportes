@@ -436,7 +436,7 @@ img {
 .sobre > p {
   color: #4b5563;
   text-align: center;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 1rem;
   line-height: 1.5;
   max-width: 900px;
   margin: 0 auto 2rem auto;
@@ -444,7 +444,7 @@ img {
 
 .sobre h1 {
   color: #1e3a8a;
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: 1.8rem;
   text-align: center;
   margin-bottom: 30px;
   font-weight: 800;
@@ -471,14 +471,14 @@ img {
 
 .beneficios-container h2 {
   color: #1e3a8a;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 1rem;
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 8px;
 }
 
 .beneficios-container p {
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: 0.9rem;
   color: #4b5563;
   line-height: 1.4;
 }
@@ -515,14 +515,14 @@ img {
   color: #4b5563;
   text-align: center;
   margin: 0 auto;
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: 1rem;
   line-height: 1.6;
   max-width: 900px;
 }
 
 .servicos h1 {
   color: #1e3a8a;
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: 1.8rem;
   text-align: center;
   margin-bottom: 30px;
   font-weight: 800;
@@ -558,14 +558,14 @@ img {
 }
 
 .card-servico h3 {
-  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-size: 1.1rem;
   margin-bottom: 8px;
   color: #1e3a8a;
   text-align: center;
 }
 
 .card-servico p {
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: 0.9rem;
   color: #4b5563;
   text-align: center;
   line-height: 1.4;
@@ -598,7 +598,7 @@ img {
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: 0.9rem;
   transition: background-color 0.3s ease;
   align-self: center;
 }
@@ -645,7 +645,7 @@ img {
 }
 
 .testimonials-header h2 {
-  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-size: 1.6rem;
   color: #1e3a8a;
   margin-bottom: 8px;
   font-weight: bold;
@@ -653,7 +653,7 @@ img {
 
 .testimonials-header p {
   color: #4b5563;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 1rem;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.5;
@@ -673,7 +673,7 @@ img {
   width: 280px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 
@@ -688,7 +688,7 @@ img {
 }
 
 .quote {
-  font-size: clamp(1.4rem, 2vw, 1.6rem);
+  font-size: 1.4rem;
   color: #bfdbfe;
   margin-right: 6px;
   line-height: 1;
@@ -696,7 +696,7 @@ img {
 
 .stars {
   color: #facc15;
-  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  font-size: 0.85rem;
 }
 
 .comment {
@@ -714,12 +714,12 @@ img {
 .name {
   color: #1e3a8a;
   font-weight: 600;
-  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  font-size: 0.95rem;
 }
 
 .service {
   color: #2563eb;
-  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+  font-size: 0.8rem;
 }
 
 /* Contato */
@@ -737,14 +737,14 @@ img {
 }
 
 .titulo-contato h2 {
-  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-size: 2rem;
   color: #111827;
   margin-bottom: 10px;
 }
 
 .titulo-contato p {
   color: #6b7280;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: 1rem;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.5;
@@ -786,19 +786,19 @@ img {
 
 .card-header-contato h3 {
   margin: 0 0 5px 0;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 1rem;
   color: #111827;
 }
 
 .card-header-contato p {
   margin: 0;
   color: #4b5563;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: 0.9rem;
 }
 
 .card-header-contato small {
   color: #9ca3af;
-  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+  font-size: 0.8rem;
 }
 
 .icon-contato {
@@ -824,7 +824,7 @@ img {
 }
 
 .formulario-contato h3 {
-  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+  font-size: 1.2rem;
   color: #111827;
   margin-bottom: 5px;
 }
@@ -832,7 +832,7 @@ img {
 .formulario-contato p {
   color: #6b7280;
   margin-bottom: 25px;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 
@@ -841,7 +841,7 @@ img {
   margin: 15px 0 5px;
   font-weight: 600;
   color: #374151;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: 0.9rem;
 }
 
 .formulario-contato input,
@@ -851,7 +851,7 @@ img {
   padding: 12px;
   border: 1px solid #d1d5db;
   border-radius: 6px;
-  font-size: clamp(0.95rem, 1.5vw, 1rem);
+  font-size: 0.95rem;
   background: #ffffff;
 }
 
@@ -867,7 +867,7 @@ img {
   padding: 12px 20px;
   border: none;
   border-radius: 8px;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: 1rem;
   margin-top: 20px;
   width: 100%;
   display: flex;
@@ -899,7 +899,7 @@ img {
 }
 
 .aviso {
-  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+  font-size: 0.8rem;
   text-align: center;
   color: #6b7280;
   margin-top: 15px;
@@ -1027,13 +1027,13 @@ img {
 
 .calculadora-inicio h2 {
   color: #282c34;
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .calculadora-inicio p {
   color: #4b5563;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -1060,7 +1060,7 @@ img {
 .formulario-container label {
   display: block;
   color: #282c34;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
@@ -1070,7 +1070,7 @@ img {
   margin-top: 5px;
   background: #f3f4f6;
   border: none;
-  font-size: clamp(0.95rem, 1.5vw, 1rem);
+  font-size: 0.95rem;
 }
 
 .input-group {
@@ -1100,7 +1100,7 @@ input[type="text"]:focus {
   border-radius: 20px;
   margin-top: 30px;
   font-weight: 700;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: 0.9rem;
   cursor: pointer;
 }
 
@@ -1117,7 +1117,7 @@ input[type="text"]:focus {
   text-align: center;
   cursor: pointer;
   display: block;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: 0.9rem;
 }
 
 /* Calculadora mobile */
@@ -1174,26 +1174,26 @@ input[type="text"]:focus {
 
 .resultado-box h4 {
   color: #1e293b;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
 .valor-frete {
   color: #2563eb;
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
 }
 
 .info-extra {
   color: #64748b;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: 0.9rem;
   margin-top: 8px;
 }
 
 .info-alteracao {
   color: #6b7280;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: 0.9rem;
   margin-top: 8px;
 }
 
