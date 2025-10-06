@@ -548,7 +548,7 @@ img {
 @media (max-width: 768px) {
   .about-section {
     padding: 80px 15px;
-    background-attachment: scroll;
+    background-image: none;
   }
   .about-header .titulo-principal {
     font-size: 2rem;
